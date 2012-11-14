@@ -25,11 +25,11 @@ set smartcase		"Override the ignorecase option if the search pattern contains up
 
 "-- Tabbed Editing --
 "Open a new (empty) tab by pressing CTRL-T. Prompts for name of file to edit
-map <C-T> :tabnew<CR>:edit 
+" map <C-T> :tabnew<CR>:edit 
 "Open a file in a new tab by pressing CTRL-O. Prompts for name of file to edit
-map <C-O> :tabfind 
+" map <C-O> :tabfind 
 "Switch between tabs by pressing Shift-Tab
-map <S-Tab> gt
+" map <S-Tab> gt
 
 "-- Tweaks --
 "Add tweak for better backspace support
@@ -73,3 +73,8 @@ vnoremap <C-L> <C-C>:bn<CR>
 inoremap <C-K> <C-O>:bn<CR>
 inoremap <C-L> <C-O>:bn<CR>
 
+"Disable tabs in MacVim
+set showtabline=0
+
+"Set tags file path, look in working directory up to root directory
+set tags=./tags;/
